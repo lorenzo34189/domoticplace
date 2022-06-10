@@ -1,0 +1,178 @@
+body{
+    /*background-color: #f8b195;*/
+    background-color: #c1e1a7;
+    color: white;
+    cursor:default;
+    margin: 0px;
+}
+
+header{
+    color: gold;
+	background-color: #148d8d;
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	padding: 25px;
+    border-bottom: 4px solid black;
+    text-align: center;
+    padding-bottom: 15px;
+}
+header .title{
+    font-size: 280%;
+    color: white;
+    
+}
+header p{
+    margin-bottom: 0px;
+    font-size: 130%;
+}
+header a{
+    text-decoration: none;
+    font-size: 150%;
+    color: white;
+}
+header a:hover{
+    color: gold;
+}
+
+.box{
+    background-color:#148d8d;
+    width: 250px;
+    height: 310px;
+    text-align: center;
+    margin: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border:2px solid black;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    /*box-shadow: 0px 0px 10px 0px black;*/
+}
+.box:hover{
+    /*background-color: #f8b195;*/
+    background-color: #148d8d76;
+    color: black;
+}
+.box:hover span{
+    color: black;
+}
+.box span{
+    color: white;
+    font-size: 150%;
+}
+.box img{
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 170px;
+}
+
+.click{
+    color: white;
+    padding: 2%;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgba(255, 217, 0, 0.548);
+}
+.click:hover{
+    color: black;
+    background-color: gold;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.back{
+    background-color: #148d8d;
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    padding-left: 0px;
+    margin-bottom:50px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px 0px black;
+    color: white;
+}
+.back:hover{
+    color: black;
+    border-color: white;
+    background-color: #148d8d76;
+}
+
+p{
+    background-color: #148d8d;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 130%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    border-bottom: 4px solid black;
+}
+p strong{
+    color: gold;
+    font-size: 150%;
+    text-transform: uppercase;
+}
+
+.ordina, .ordinabut{
+    background-color: #148d8d;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    font-size: 300%;
+    margin: auto;
+    margin-bottom: 40px;
+    width: 500px;
+    border-radius: 10px;
+    
+}
+.ordina:hover, .ordinabut:hover{
+    /*background-color: #f8b195;*/
+    background-color: #148d8d76;
+    color: black;
+}
+.mini-title, .spie{
+    margin: auto;
+    margin-top: 20px;
+    width: 800px;
+}
+#buttonordina strong{
+    color: gold;
+}
+
+.nomeecognome input, .indirizzo input, .numero input{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;
+    height: 60px;
+    font-size: 70%;
+    border-radius: 20px;
+    padding: 15px;
+}
+.nomeecognome, .indirizzo, .numero{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 300%;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 500px;
+    border-radius: 10px;
+}
+.annotazione{
+    font-size: 60%;
+}
+.information{
+    background-color: #148d8d;
+    padding: 15px;
+    width: 800px;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+}

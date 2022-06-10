@@ -1,0 +1,162 @@
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/ordini.css">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Ordina</title>
+</head>
+
+<body>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-auth-compat.js"></script>
+    <script src="js/ordini.js"></script>
+    <header>
+        <a style="float: left;" href="index.html">&#8592;BACK<img src="img/favicon.ico" alt=""></a>
+        <span class="title">ORDINA</span>
+
+    </header>
+    <p class="spie">Clicca sul prodotto per aggiungerlo ai prodotti che vorresti usare o clicca sul sistema che
+        preferisci per darci piena autonomia su quali apparecchi usare su misura per te. </p>
+    <div class="mini-title">
+        <p><strong>apple</strong></p>
+    </div>
+    <div class="box" id="apple" onclick="document.getElementById('1').checked=!document.getElementById('1').checked;cambiaapple()" class="click">
+        <img src="prodotti/img/homekit.png" alt="">
+        <span id="101">Sistema Apple<br>HomeKit<br><br></span>
+        <div ><input type="checkbox" id="1" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" id="apple" onclick="if(document.getElementById('1').checked!=1 && document.getElementById('11').checked!=1){document.getElementById('2').checked=!document.getElementById('2').checked;}">
+        <img src="img/homepod.png" alt="">
+        <span id="102">Homepod mini <br> Apple device <br>99&euro; </span>
+        <div><input type="checkbox" id="2" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" id="apple" onclick="if(document.getElementById('1').checked!=1 && document.getElementById('11').checked!=1){document.getElementById('3').checked=!document.getElementById('3').checked;}" class="click">
+        <img src="img/presa_intelligente.png" alt="">
+        <span id="103">Presa Intelligente <br> Wi-Fi<br> 14,9&euro;</span>
+        <div ><input type="checkbox" id="3" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" id="apple" onclick="if(document.getElementById('1').checked!=1 && document.getElementById('11').checked!=1){document.getElementById('4').checked=!document.getElementById('4').checked;}" class="click">
+        <img src="img/intwlanapple.png" alt="">
+        <span id="104">Interruttore WLAN<br> Wi-Fi<br> 9,99&euro;</span>
+        <div><input type="checkbox" id="4" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" id="apple" onclick="if(document.getElementById('1').checked!=1 && document.getElementById('11').checked!=1){document.getElementById('5').checked=!document.getElementById('5').checked;}" class="click">
+        <img src="img/nanoleaf.png" alt="">
+        <span id="105">Lampadina Wi-Fi<br> Nanoleaf<br> 19,9&euro;</span>
+        <div><input type="checkbox" id="5" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" id="apple" onclick="if(document.getElementById('1').checked!=1 && document.getElementById('11').checked!=1){document.getElementById('6').checked=!document.getElementById('6').checked;}" class="click">
+        <img src="prodotti/img/esagono.png" alt="">
+        <span id="106">Iluminazione<br>a muro esagoni<br> 239&euro;</span>
+        <div><input type="checkbox" id="6" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" id="apple" onclick="if(document.getElementById('1').checked!=1 && document.getElementById('11').checked!=1){document.getElementById('7').checked=!document.getElementById('7').checked;}" class="click">
+        <img src="img/led.png" alt="">
+        <span id="107">Striscia led<br> Nanoleaf<br> 49&euro;</span>
+        <div><input type="checkbox" id="7" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" id="apple" onclick="if(document.getElementById('1').checked!=1 && document.getElementById('11').checked!=1){document.getElementById('8').checked=!document.getElementById('8').checked;}" class="click">
+        <img src="img/logitechcam.png" alt="">
+        <span id="108">Videocamera di <br> sicurezza Logitech<br> 139&euro;</span>
+        <div><input type="checkbox" id="8"/>Aggiungi al carrello</div>
+    </div>
+    <div class="box" id="apple" onclick="if(document.getElementById('1').checked!=1 && document.getElementById('11').checked!=1){document.getElementById('9').checked=!document.getElementById('9').checked;}" class="click">
+        <img src="img/sensore.png" alt="">
+        <span id="109">Sensore<br>Di sicurezza<br> 35&euro;</span>
+        <div><input type="checkbox" id="9" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" id="apple" onclick="if(document.getElementById('1').checked!=1 && document.getElementById('11').checked!=1){document.getElementById('10').checked=!document.getElementById('10').checked;}" class="click">
+        <img src="img/finestre.png" alt="">
+        <span id="110">Sensore<br>Finestre e porte<br> 39&euro;</span>
+        <div><input type="checkbox" id="10" />Aggiungi al carrello</div>
+    </div>
+    <br><br><br><br><br>
+
+
+    <div class="mini-title">
+        <p><strong>alexa</strong></p>
+    </div>
+    <div class="box" onclick="document.getElementById('11').checked=!document.getElementById('11').checked; cambiaalexa()" class="click">
+        <img src="img/alexa.png" alt="">
+        <span id="111">Sistema Amazon<br> Alexa <br><br></span>
+        <div><input type="checkbox" id="11" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" onclick="if(document.getElementById('11').checked!=1 && document.getElementById('1').checked!=1){document.getElementById('12').checked=!document.getElementById('12').checked;}" class="click">
+        <img src="img/alexa.png" alt="">
+        <span id="112">Modelli<br> di Alexa <br>24-239&euro;</span>
+        <div><input type="checkbox" id="12" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" onclick="if(document.getElementById('11').checked!=1 && document.getElementById('1').checked!=1){document.getElementById('13').checked=!document.getElementById('13').checked;}" class="click">
+        <img src="img/sonoff.png" alt="">
+        <span id="113">Sonoff Basic R2<br> Wi-Fi <br>14,9&euro;</span>
+        <div><input type="checkbox" id="13" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" onclick="if(document.getElementById('11').checked!=1 && document.getElementById('1').checked!=1){document.getElementById('14').checked=!document.getElementById('14').checked;}" class="click">
+        <img src="prodotti/img/lampadinalexa.png" alt="">
+        <span id="114">Lampadina<br> Smart Wi-Fi <br>14,9&euro;</span>
+        <div><input type="checkbox" id="14" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" onclick="if(document.getElementById('11').checked!=1 && document.getElementById('1').checked!=1){document.getElementById('15').checked=!document.getElementById('15').checked;}" class="click">
+        <img src="prodotti/img/echosub.png" alt="">
+        <span id="115">Echo<br> Sub<br> 129&euro;</span>
+        <div><input type="checkbox" id="15" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" onclick="if(document.getElementById('11').checked!=1 && document.getElementById('1').checked!=1){document.getElementById('16').checked=!document.getElementById('16').checked;}" class="click">
+        <img src="prodotti/img/echoauto.png" alt="">
+        <span id="116">Echo<br> Auto<br> 52&euro;</span>
+        <div><input type="checkbox" id="16" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" onclick="if(document.getElementById('11').checked!=1 && document.getElementById('1').checked!=1){document.getElementById('17').checked=!document.getElementById('17').checked;}" class="click">
+        <img src="prodotti/img/interruttore.png" alt="">
+        <span id="117">Presa<br> Wi-Fi <br>19,9&euro;</span>
+        <div><input type="checkbox" id="17" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" onclick="if(document.getElementById('11').checked!=1 && document.getElementById('1').checked!=1){document.getElementById('18').checked=!document.getElementById('18').checked;}" class="click">
+        <img src="prodotti/img/allarmi.png" alt="">
+        <span id="118">Allarmi<br> domotici <br>60&euro;</span>
+        <div><input type="checkbox" id="18" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" onclick="if(document.getElementById('11').checked!=1 && document.getElementById('1').checked!=1){document.getElementById('19').checked=!document.getElementById('19').checked;}" class="click">
+        <img src="prodotti/img/movimento.jpg" alt="">
+        <span id="119">Sensore<br>Movimento<br> 29,9&euro;</span>
+        <div><input type="checkbox" id="19" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" onclick="if(document.getElementById('11').checked!=1 && document.getElementById('1').checked!=1){document.getElementById('20').checked=!document.getElementById('20').checked;}" class="click">
+        <img src="img/ezviz.png" alt="">
+        <span id="120">Telecamera Wi-Fi<br> EZVIZ C6N<br> 34&euro;</span>
+        <div><input type="checkbox" id="20" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" onclick="if(document.getElementById('11').checked!=1 && document.getElementById('1').checked!=1){document.getElementById('21').checked=!document.getElementById('21').checked;}" class="click">
+        <img src="prodotti/img/caffettiera.png" alt="">
+        <span id="121">Caffettiera <br>Alexa-Lavazza <br>174&euro;</span>
+        <div><input type="checkbox" id="21" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" onclick="if(document.getElementById('11').checked!=1 && document.getElementById('1').checked!=1){document.getElementById('22').checked=!document.getElementById('21').checked;}" class="click">
+        <img src="prodotti/img/smartiair.png" alt="">
+        <span id="122">Amazon <br>Smart Air <br>79,9&euro;</span>
+        <div><input type="checkbox" id="22" />Aggiungi al carrello</div>
+    </div>
+    <div class="box" onclick="if(document.getElementById('11').checked!=1 && document.getElementById('1').checked!=1){document.getElementById('23').checked=!document.getElementById('23').checked;}" class="click">
+        <img src="prodotti/img/broadlink.png" alt="">
+        <span id="123">Broadlink <br>RM4 Mini IR<br> 32,9&euro;</span>
+        <div><input type="checkbox" id="23" />Aggiungi al carrello</div>
+    </div>
+
+    <footer>
+        <a href="index.html">
+            <div class="back">&#8592BACK</div>
+        </a>
+    </footer>
+    <div class="information">
+        <div class="ordina" id="buttonordina"></div>
+        <div class="ordina" style="font-size: 230%; color: gold;">inserisci i tuoi dati per l'ordine</div>
+        <div class="nomeecognome" ><input id="nome" type="name" placeholder="nome e cognome"/></div>
+        <div class="numero"><input id="numero" type="name" placeholder="numero di telefono o email"/></div>
+        <div class="indirizzo"><input id="indirizzo" type="name" placeholder="Indirizzo via, città"/></div>
+    </div>
+    <div id="ordina"><div class="ordina" onclick="riepilogo()">Riepilogo <br><dic class="annotazione">clicca per preseguire con l'ordine</div></div></div>
+</body>
+
+</html>

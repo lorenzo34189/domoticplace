@@ -1,0 +1,18 @@
+.area{
+    text-align: left;
+}
+.boxlavori{
+    background-color: #148d8d;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.boxlavori nav ul li p{
+    font-size: 100%;
+}
+.boxlavori img{
+    border-radius: 20px;
+    margin-right: 30px;
+}

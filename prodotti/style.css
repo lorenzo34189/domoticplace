@@ -1,0 +1,107 @@
+body{
+    background-color: #c1e1a7;
+    font-size: 120%;
+    cursor: default;
+    margin: 0px;
+}
+
+header{
+    color: gold;
+	background-color: #148d8d;
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	padding: 25px;
+    border-bottom: 4px solid black;
+    text-align: center;
+    padding-bottom: 15px;
+}
+header .title{
+    font-size: 280%;
+    color: white;
+}
+header a{
+    text-decoration: none;
+    font-size: 150%;
+    color: white;
+}
+header a:hover{
+    color: gold;
+}
+a:hover{
+    cursor: pointer;
+}
+.contenuto{
+    background-color: #148d8d;
+    padding: 25px;
+    font-size: 180%;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    color: white;
+    text-align: left;
+}
+.contenuto p{
+    font-size: 110%;
+}
+.contenuto strong{
+    color: gold;
+    font-size: 120%;
+    text-transform: uppercase;
+}
+.contenuto span{
+    text-align: center;
+    font-size: 150%;
+    color: black;
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p{
+    margin: 5px;
+    margin-bottom: 20px;
+    font-size: 150%;
+}
+
+.box{
+    background-color: #148d8d;
+    padding: 25px;
+    font-size: 140%;
+    margin-top: 20px;
+    border-radius: 20px;
+    color: white;
+}
+.box strong{
+    color: gold;
+    font-size: 110%;
+    text-transform: uppercase;
+}
+.box span{
+    text-align: center;
+    font-size: 150%;
+    color: black;
+}
+footer{
+    margin-top: 20px;
+}
+.back{
+    background-color: #148d8d;
+    width: 200px;
+    
+    text-align: center;
+    padding: 15px;
+    padding-left: 0px;
+    margin-bottom:50px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px 0px black;
+    color: white;
+    text-decoration: underline;
+}
+.back:hover{
+    color: black;
+    border-color: white;
+    background-color: #148d8d76;
+}

@@ -1,0 +1,26 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ordinazioni</title>
+</head>
+<body>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-auth-compat.js"></script>
+    <script src="js/ordini.js"></script>
+    <header>
+        <a style="float: left;" href="index.html">&#8592;BACK<img src="img/favicon.ico" alt=""></a>
+        <script src="js/info.js"></script>
+        <a style="float: right; font-size: 180%;" onclick="info()"><img src="img/info.png" width="20" height="20" alt=""> info</a>
+        <img src="img/cactus.png" alt="cactus" width="50" height="60">
+        <span class="title" align="center">ordinazioni</span>
+    </header>
+    <div class="ordini" id="ordini">
+        <script>see()</script>
+    </div>
+    <button class="aggiorna" onclick="change()">Aggiorna elenco</button>
+</body>
+</html>

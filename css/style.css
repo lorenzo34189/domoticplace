@@ -1,0 +1,144 @@
+body{
+    background-color: #c1e1a7;
+    color: white;
+    cursor: default;
+    margin: 0px;
+    text-align: center;
+}
+
+header{
+    color: gold;
+	background-color: #148d8d;
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	padding: 25px;
+    border-bottom: 4px solid black;
+}
+header span{
+    font-size: 170%;
+}
+header .title{
+    font-size: 400%;
+    color: white;
+}
+
+.info{
+    text-transform: uppercase;
+    margin: 20px;
+    background-color: #148d8d;
+    border-bottom: 4px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
+.info nav ul li{
+    display: inline-block;
+    font-size: 150%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0);
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+nav ul li:hover{
+    background-color: #c1e1a7;
+    border-bottom: 4px solid black;
+    box-shadow: 0px 5px 10px 0px black;   
+}
+a:hover{
+    color: black;
+}
+
+.contenuto2, .contenuto1, .contenuto3, .contenuto4{
+    font-size: 70%;
+    border-radius: 20px;
+	background-color: #c1e1a7;
+	color: black;
+	border-bottom: 4px solid black;
+	margin: 10px;
+	padding: 15px;
+	display: none;
+	position: absolute;
+	top: 252px;
+	right: 10px;
+	left: 10px;
+    box-shadow: 0px 0px 10px 0px black;
+
+}
+.contenuto2 strong, .contenuto1 strong, .contenuto3 strong, .contenuto4 strong{
+    text-decoration: underline;
+}
+nav ul li:hover .contenuto1,nav ul li:hover .contenuto2,nav ul li:hover .contenuto3,nav ul li:hover .contenuto4{
+	display: block;
+}
+nav ul li span{
+    font-size: 160%;
+}
+
+ul{ 
+    margin-bottom: 0px;
+}
+hr{
+    width: 500px;
+    border: 2px solid #148d8d;
+    background-color: #148d8d;
+    border-radius: 10px;
+}
+.informazioni{
+    margin: 20px;
+    font-size: 150%;
+    border-radius: 20px;
+    border-bottom: 4px solid black;
+    background-color: #148d8d;
+    padding: 15px;
+}
+
+.ordini{
+    text-align: center;
+}
+input{
+    color: #148d8d;
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 150%;
+}
+button{
+    background-color: #148d8d;
+    width: 150px;
+    height: 50px; 
+    color: white;
+    text-transform: uppercase;
+}
+button:hover{
+    background-color: #148d8d76;
+    color: black;
+}
+.box{
+    background-color: #148d8d;
+    font-size: 170%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    width: 500px;
+    text-align: left;
+}
+.box strong{
+    color: gold;
+    font-size: 120%;
+}
+
+.aggiorna{
+    background-color: #148d8d;
+    width: 800px;
+    height: 100px;
+    font-size: 200%;
+    margin: auto;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
